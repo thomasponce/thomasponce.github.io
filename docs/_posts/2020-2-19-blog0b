@@ -1,0 +1,20 @@
+** Blog 0 Last Semester**
+** How to delete a protected partition**
+One of the most important things about working in Information Technology is managing storage. 
+One way of doing this can be to create and edit different partitions on your drive. 
+A partition is a way your computer's hard drive way of dividing it into different sections, mainly used to have different Operating systems on your computer or to have the appearance of multiple drives.
+Once a partition is made it will be given a a letter to identify it with and the amount of storage available. 
+You are able to visit the  Disk Management application located on Windows to edit, create, or delete partitions. 
+However, sometimes you will have a partition that locks the ability to delete, shrink, or edit your partitions. 
+This is due to the fact that when it was created, the software that created it, did it in such a way that prevents tampering with it. 
+The solution to this problem is DISKPART which is a command line tool. 
+Here are the steps to delete that protected partition:
+1. Start CMD as admin.
+2. Type "diskpart" into the prompt. 
+3. Type the command "list disk". You should see all the disks listed for that computer.
+4. Then you will type which disk you want to select. If we wanted to select disk 4, we would type "select disk 4". A star should now be next the disk when you list them. 
+5. To to delete all contents on the disk, you will enter "clear" into the prompt.
+6. You can now exit the CMD terminal. 
+7. When you open the Disk Management application it will ask you to initalize the clean disk. Press "Ok"
+8. The disk will now be cleaned and you can resume managing storage. 
+Happy Disk Management! 
